@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Name Animation</title>
+  <style>
+    /* Body background color */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #4a90e2; /* Change to your preferred background color */
+    }
+
+    /* Startup name styling */
+    .startup-name {
+      font-family: Arial, sans-serif;
+      font-size: 4em;
+      color: white;
+      opacity: 0;
+      animation: fadeIn 5s ease-in-out forwards; /* Animation duration and type */
+    }
+
+    /* Fade-in keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <div class="startup-name">Your Startup</div>
+
 </body>
 </html>
