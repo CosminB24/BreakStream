@@ -4,7 +4,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #4a90e2;
+      background-color: #000;
     }
 
     .startup-name {
@@ -12,7 +12,7 @@
       font-size: 4em;
       color: white;
       opacity: 0;
-      animation: fadeIn 5s ease-in-out forwards;
+      animation: fadeIn 2s ease-in-out forwards;
     }
 
     @keyframes fadeIn {
