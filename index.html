@@ -8,11 +8,11 @@
   <script>
     window.onload = function() {
       setTimeout(function(){
-        document.querySelector('.startup-name').classList.add('slide-up');
+        document.querySelector('.startup-content').classList.add('slide-up');
       }, 2000);
 
       setTimeout(function(){
-        document.querySelector('.startup-name').classList.add('fade-out');
+        document.querySelector('.startup-content').classList.add('fade-out');
       }, 4000);
 
       setTimeout(function(){
@@ -23,7 +23,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="startup-name">BreakStream</div>
+    <div class="startup-content">
+      <img src="assets/logo.png" alt="BreakStream Logo" class="logo">
+      <div class="startup-name">BreakStream</div>
+    </div>
   </div>
 </body>
 </html>

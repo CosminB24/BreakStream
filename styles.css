@@ -8,15 +8,27 @@ body {
   overflow: hidden;
 }
 
-.startup-name {
-  font-family: Arial, sans-serif;
-  font-size: 4em;
-  color: white;
+.container {
+  text-align: center;
+}
+
+.startup-content {
   opacity: 0;
   position: relative;
   bottom: -100vh;
   animation: fadeIn 2s ease-in-out forwards;
   transition: bottom 1s ease-in-out;
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.startup-name {
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  color: white;
 }
 
 @keyframes fadeIn {
@@ -28,7 +40,7 @@ body {
   }
 }
 
-.startup-name.slide-up {
+.startup-content.slide-up {
   bottom: 0;
 }
 
