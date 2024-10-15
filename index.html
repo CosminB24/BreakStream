@@ -8,16 +8,22 @@
   <script>
     window.onload = function() {
       setTimeout(function(){
+        document.querySelector('.startup-name').classList.add('slide-up');
+      }, 2000);
+
+      setTimeout(function(){
+        document.querySelector('.startup-name').classList.add('fade-out');
+      }, 4000);
+
+      setTimeout(function(){
         window.location.href = "home_screen.html";
-      }, 3000);
+      }, 5000);
     };
-
-
   </script>
 </head>
 <body>
-
-  <div class="startup-name">BreakStream</div>
-
+  <div class="container">
+    <div class="startup-name">BreakStream</div>
+  </div>
 </body>
 </html>
