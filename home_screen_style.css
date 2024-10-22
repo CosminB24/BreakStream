@@ -1,0 +1,140 @@
+/* Navbar styling */
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  background-color: #f9f9f9;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Carousel with all videos */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+#videoList {
+  display: flex;
+  width: 100%; /* Occupy full width */
+}
+
+.video-card {
+  flex: 0 0 100%; /* Each card takes up the full carousel width */
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+.video-thumbnail {
+  width: 100%; /* Take up half the card's width */
+  height: 300px; /* Keep a consistent height */
+  object-fit: cover;
+}
+
+.video-details {
+  width: 100%; /* Take up the other half of the card's width */
+  padding: 15px; /* Add padding to the left */
+  display: flex;
+  flex-direction: column; /* Align details vertically */
+  justify-content: center;
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.video-duration {
+  color: #888;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Main content wrapper */
+.content-wrapper {
+  display: flex; /* Arrange carousel and text side by side */
+  justify-content: space-between; /* Space out the elements */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit the width of the entire content */
+  margin: auto; /* Center the content on the page */
+}
+
+/* Product description styling */
+.product-description {
+  flex: 1; /* Allow the text to take remaining space */
+  padding: 20px; /* Add padding around the text */
+  max-width: 400px; /* Limit the width for better readability */
+}
+
+.product-description h2 {
+  font-size: 24px; /* Increase the title size */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.product-description p {
+  font-size: 16px; /* Set paragraph font size */
+  color: #555; /* Change text color for better readability */
+}
+
+/* Adjust carousel container if needed */
+.carousel-container {
+  flex: 1; /* Allow carousel to take remaining space */
+  max-width: 500px; /* Limit width on larger screens */
+  overflow: hidden; /* Hide the content outside the visible area */
+  position: relative;
+  margin-right: 20px; /* Space between carousel and description */
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .carousel-container, .product-description {
+    max-width: 100%; /* Allow full width on mobile */
+    margin: 0; /* Remove margin */
+  }
+
+  .product-description {
+    padding: 10px; /* Less padding on mobile */
+  }
+}
