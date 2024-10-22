@@ -123,7 +123,7 @@ main {
 }
 
 .join-now-button {
-  background-color: #ff4081; /* Pink background color */
+  background-color: #ff6f00; /* Pink background color */
   color: #ffffff; /* White text color */
   padding: 12px 24px; /* Top/bottom and left/right padding */
   border: none; /* Remove default border */
@@ -135,14 +135,13 @@ main {
 }
 
 .join-now-button:hover {
-  background-color: #ff3366; /* Darker shade on hover */
+  background-color: #ffa450; /* Darker shade on hover */
   transform: translateY(-2px); /* Slight lift effect */
 }
 
 .join-now-button:active {
   transform: translateY(0); /* Reset position when pressed */
 }
-
 
 /* Mobile Responsive */
 @media only screen and (max-width: 600px) {
