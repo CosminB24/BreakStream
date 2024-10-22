@@ -1,53 +1,87 @@
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    z-index: 1;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-            color: white;
-            min-height: 100vh;
-        }
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .section {
-            display: flex;
-            margin-bottom: 40px;
-            align-items: center;
-        }
-        .photo {
-            flex: 1;
-            margin: 10px;
-        }
-        .text {
-            flex: 1;
-            margin: 10px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        h1, h2 {
-            color: #ffffff;
-        }
+.navbar a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.photo {
+    flex: 1;
+    margin: 10px;
+}
+
+.text {
+    flex: 1;
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    color: #ffffff;
+}

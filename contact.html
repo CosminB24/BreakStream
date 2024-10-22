@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Team & Contact Us</title>
+    <link rel="stylesheet" href="contact/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="home_screen.html">Home</a>
+        <a href="#about">About</a>
+        <a href="prezentare.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    <!-- My Team Section -->
+    <div class="team-section">
+        <h2>My team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="contact/Alexa.png" alt="Alexandra Halmaghi">
+                <h3>Alexandra Halmaghi</h3>
+                <p>Frontend Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="contact/Cosmin.png" alt="Cosmin Badea">
+                <h3>Cosmin Badea</h3>
+                <p>Backend Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="contact/Antonia.png" alt="Costea Antonia">
+                <h3>Costea Antonia</h3>
+                <p>UX/UI Designer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="contact/Alexandra.png" alt="Alexandra Hancu">
+                <h3>Alexandra Hancu</h3>
+                <p>Frontend Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="contact/Mihai.png" alt="Mihai Bundea">
+                <h3>Mihai Bundea</h3>
+                <p>Backend Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <p style="text-align: center;">Keep in touch</p>
+        
+        <div class="contact-container">
+            <!-- Informațiile de contact -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>Brașov</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>0799359300</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>team_break@gmail.com</p>
+                </div>
+            </div>
+            
+            <!-- Formularul de contact -->
+            <div class="contact-form-container">
+                <h2>Send Message</h2>
+                <div class="contact-form">
+                    <form action="#">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="5" placeholder="Type your Message..." required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- JavaScript pentru validare -->
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                alert('Toate câmpurile sunt obligatorii.');
+                return;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert('Introduceți un email valid.');
+                return;
+            }
+
+            alert('Mesajul a fost trimis cu succes!');
+            this.submit();
+        });
+    </script>
+
+</body>
+</html>

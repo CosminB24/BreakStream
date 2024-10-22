@@ -1,3 +1,15 @@
+.navbar a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
