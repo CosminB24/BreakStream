@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+    min-height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Pricing Container */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+/* Individual Pricing Plan Boxes */
+.pricing-plan {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 8px;
+    margin: 0 20px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header for Pricing Plan */
+.pricing-plan h2 {
+    background-color: #8a6fab;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Pricing Text */
+.pricing-plan .price {
+    font-size: 48px;
+    color: #992c7a;
+}
+
+/* List of Features */
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    margin: 10px 0;
+}
+
+/* Buttons */
+.pricing-plan .button {
+    background-color: #683272;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-plan .button:hover {
+    background-color: #5e0f73;
+}
+
+.title {
+    margin-top: 50px; /* Adjust this value to move the title down */
+}
+
